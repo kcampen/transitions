@@ -1,90 +1,344 @@
-body {
-	margin: 0px;
-	padding: 0px;
+.container {
+	min-width: 960px;
+	margin: 0 auto;
 }
+
+.area {
+	margin: 100px 0;
+	height: 200px;
+	min-width: 960px;
+}
+
+.title {
+	margin: 100px; 
+	font-size: 15px;
+}
+
 
 .box1 {
-	margin: 50px auto;
 	width: 200px;
 	height: 125px;
-	background: rgb(191, 238, 179);
-	box-shadow: inset 0 -6px 0 rgb (121, 121, 180);
-	border-radius: 6px;
-	-webkit-transition: all 1s ease;
+	margin:0 auto;
+	background-color: blue;
+	border: 2px solid black;
+	text-align: center;
+	position: relative;
 
 }
 
-.box1:hover {
-	/*width 300px take out adjust to margin and margin top*/
-	margin-top: 53px;
-	height: 122px;
-	-webkit-transform: rotate(18deg);
-	box-shadow: inset 0 -3px 0 rgb(121, 121, 180);
-	
+.text {
+	color: green;
+	font-size: 0px;
+	-webkit-transition: all 1s ease;
+}
+
+.box1:hover .text {
+	position: absolute;
+	font-size: 70px;
+	-webkit-transition:translate Y;
 }
 
 .box2 {
-	height: 200px;
-	width: 200px;
-	margin: 50px auto;
-	background: rgb(233, 229, 147);
-	-webkit-transition: all 1s ease;
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	background-color: yellow;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-transition: all 2s ease;
 }
+
 
 .box2:hover {
-	border-radius: 200px;
+
+	font-size: 0px;
+	background-color: green;
+	margin: 0 auto;
+	-webkit-transform: rotate(360deg);
+
 }
- 
- .box3 {
- 	height: 125px;
- 	width: 200px;
- 	margin: 50px auto;
- 	-webkit-transition: all 0.5s ease;
-  	background: rgb(36, 124, 206);
-  	padding: 10px;
- }
+
+.text2 {
+	font-size: 25px;
+	color: black;
+	-webkit-transition: all 2s ease;
+
+}
+
+
+.box3 {
+	border: 2px solid rgb(156, 151, 141);
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	background-color: rgb(172, 196, 238);
+	text-align: center;
+	position: relative;
+	box-shadow: inset 0 -1px 0 rgb(106, 101, 101);
+	-webkit-transition: box-shadow 1s ease;
+}
 
 .box3:hover {
-	background: rgb(219, 152, 65);
-  	padding: 20px;
+	box-shadow: inset 0 -6px 0 rgb(106, 101, 101);
+
 }
 
 .box4 {
-	margin: 50px auto;
-	width: 200px;
-	height: 125px;
-	background-color: rgb(11, 27, 213);
-	background-image: linear-gradient(rgba(255, 255, 0, 0.4), #FAFAFA);
- 	-webkit-transition: background-color 400ms ease;
+	width: 150px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	background-color: black;
+	border: 2px solid green;
+	color: #fff;
+	text-align: center;
+	-webkit-transition: .1s all;
 
 }
 
-.box4:hover {
-	background-color: rgb(27, 148, 51);
+.box4:active {
+	background-color: red;
+	border-color: yellow;
 }
+
 
 .box5 {
-	margin: 50px auto;
 	width: 200px;
-	height: 125px;
-	background-color: purple;
-
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	background-color: gray;
+	border: 1px solid black;
+	text-align: center;
+	color: #fff;
+	box-shadow: inset 2px;
+	-webkit-transition: 3s all ease;
 }
 
 .box5:hover {
-	margin-top: 53px;
-	height: 122px;
-	box-shadow: inset 0 3px 0 rgb(121, 121, 180,);
+	height: 100px;
+
 }
 
+.text5 {
+	font-size: 30px;
+
+}
 
 .box6 {
-	margin: 50px auto;
 	width: 200px;
-	height: 125px;
+	height: 100px;
+	margin: 0 auto;
+	display: inline-block;
+	border: dotted 5px green;
+	background-color: gray;
+	-webkit-transition: 1.5s all;
+}
+
+.box6:hover {
+	display: inline-block;
+	margin: 0 auto;
+	margin-left: 200px;
+}
+
+.box7 {
+	height: 50px;
+	width: 50px;
+	background-color: blue;
+	margin: 0 auto;
+	color: #fff;
+	display: inline-block;
+	box-shadow: inset 0 -1px -1px black;
+	-webkit-transition: .5s ease;
+}
+
+.box7:hover {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+}
+
+.box8 {
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	position: relative;
+	border: 7px solid green;
+	-webkit- transition: 2s ease all;
+
+}
+
+.box8:hover{
+	border: dotted orange;
+	height: 200px;
+	width: 200px;
+
 }
 
 
+.box9 {
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+	display: inline-block;
+	border: 2px solid gray;
+	-webkit-transition: all 2s ease;
+	
+}
+
+
+.box9:hover {
+	
+	margin-left: 500px;
+	background-color: #fff;
+
+}
+
+.hoop {
+	margin: 8px 500px;
+	height: 100px;
+	width: 100px;
+	border-radius: 40px;
+	border: 4px solid red;
+
+}
+
+.basket{
+	position: relative;
+	margin: 35px auto;
+	height: 50px;
+	width: 75px;
+	border-radius: 40px;
+	border: 2px solid black;
+}
+
+
+.box10 {
+	height: 100px;
+	width: 100px;
+	margin-left: 82px;
+	margin-top: 195px;
+	border-radius: 100px;
+	background-color: orange;
+	border: 2px solid black;
+	position: relative;
+	-webkit-transition: all ease .5s;
+
+}
+
+.box10:active {
+	position: relative;
+	margin-top: -70px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	margin-left: 520px;
+	-webkit-transform: rotate (360deg);
+}
+
+
+.box11 {
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	background: black;
+	color: black;
+	text-align: center;
+	font-size: 60px;
+	color: black;
+	-webkit-transition: all 2s ease;
+
+}
+
+.box11:hover {
+	color: #fff;
+
+}
+
+.box12 {
+	height: 75px;
+	width: 40px;
+	margin: 0 auto;
+	position: relative;
+	border: 3px solid black;
+	background-color: yellow;
+	-webkit-transition: all 3s ease;
+	transition-timing-function:steps (4, end);
+
+}
+
+.box12:active {
+	height: 0px;
+}
+
+.fry {
+	height: 150px;
+	width: 100px;
+	margin: 0 auto;
+	background-color: rgb(199, 0, 23);
+	position: relative;
+	border: solid black 3px;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 100px;
+	text-align: center;
+
+}
+
+.box13 {
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+	background-color: rgb(50, 103, 137);
+	margin: 0 auto;
+	border-radius: 0px;
+	-webkit-transition: border-radius;
+}
+
+.box13:hover {
+	border-radius: 80px;
+}
+
+.box14 {
+	position: relative;
+	display: inline-block;
+	height: 75px;
+	width: 200px;
+	background-color: rgb(50, 103, 137);
+	color: #fff;
+	text-shadow: 0 1px 1px black;
+	box-shadow: inset 0 1px 0px gray;
+	border-radius: 6px;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 30px;
+	-webkit-transition: 1s all ease;
+}
+
+.box14:hover {
+	box-shadow: 0 0 1px 5px red;
+}
+
+
+.box15 {
+	margin: 0 auto;
+	height: 0;
+	width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	-webkit-transition: all 0.3s ease;
+}
+
+.box15:hover {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}
 
 
 
